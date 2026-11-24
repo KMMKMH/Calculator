@@ -37,10 +37,11 @@ body {
     overflow: hidden;
 }
 
-#operation {
+#dash {
     display: flex;
     flex: 1;
-    font-size: xx-large;
+    font-size: x-large;
+    gap: 15px;
 }
 
 #operands {
@@ -69,6 +70,10 @@ body {
     font-weight: bold;
 }
 
+.button:disabled {
+    cursor: not-allowed;
+}
+
 #buttonC {
     background-color: tomato;
 }
@@ -79,8 +84,4 @@ body {
 
 .symbol {
     background-color: gray;
-}
-
-.active {
-    background-color: greenyellow;
 }
