@@ -34,6 +34,18 @@ body {
     background-color: black;
     font-size: 100px;
     font-weight: bold;
+    overflow: hidden;
+}
+
+#operation {
+    display: flex;
+    flex: 1;
+    font-size: xx-large;
+}
+
+#operands {
+    display: flex;
+    flex: 3;
 }
 
 .keys {
@@ -57,10 +69,18 @@ body {
     font-weight: bold;
 }
 
+#buttonC {
+    background-color: tomato;
+}
+
+#buttonEql {
+    background-color: orange;
+}
+
 .symbol {
     background-color: gray;
 }
 
-#buttonC {
-    background-color: tomato;
+.active {
+    background-color: greenyellow;
 }

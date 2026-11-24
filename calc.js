@@ -1,6 +1,14 @@
 let operand1 = 0;
 let operand2 = 0;
+let result = 0;
 let operator = "";
+
+const OPERATORS = {
+    "+": "Pls",
+    "-": "Min",
+    "×": "Mult",
+    "÷": "Div",
+}
 
 
 function add(a, b) {
@@ -28,14 +36,39 @@ function operate(op, a, b) {
             return add(a, b);
         case "-":
             return subtract(a, b);
-        case "*":
+        case "×":
             return multiply(a, b);
-        case "/":
+        case "÷":
             return divide(a, b);
         default:
             return add(a, b);
     }
 }
 
+function clear() {
+}
+
+function updateDisplay() {
+}
+
+function updateOperatorDisplay() {
+}
+
 
 const container = document.querySelector("#container");
+const display = document.querySelector("#display");
+
+
+container.addEventListener("click", (event) => {
+    const button = event.target;
+    const classes = Array.from(button.classList);
+
+    if (classes.includes("symbol") && button) {
+    } 
+    else if(button.id.includes("Eql")) {
+    } 
+    else if(button.id.includes("C")) {
+    } 
+    else if(button.id.includes("button")) {
+    }
+})
